@@ -1,6 +1,6 @@
 @import url(styles/reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
     --colour-darkgreen: #30382D; 
@@ -437,7 +437,7 @@ body, h1, ul, li, a {
 /* Product benefits section styling */
 .product-benefits-section {
     background-color: var(--colour-lightyellow);
-    height: 1087px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -485,51 +485,277 @@ body, h1, ul, li, a {
     margin-top: 0;
 }
 
+/* Footer styling */
+.footer-section {
+    width: 100%;
+    height: 650px;
+    background-color: var(--colour-darkgreen);
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 76px;
+    position: relative;
+    margin-top: -20px;
+    box-sizing: border-box;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 147px;
+    width: calc(100% - 256px);
+    box-sizing: border-box;
+}
+
+.footer-column {
+    text-align: left;
+}
+
+.footer-title {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--colour-lightyellow);
+    margin-bottom: 9px;
+}
+
+.footer-line {
+    width: 300px;
+    height: 2px;
+    background-color: var(--colour-lightyellow);
+    margin-bottom: 7px;
+}
+
+.footer-item {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 19px;
+    color: var(--colour-lightyellow);
+    margin-bottom: 20px;
+}
+
+.footer-column:nth-child(1) .footer-title:nth-of-type(2) {
+    margin-top: 50px;
+}
+
+.footer-column:nth-child(2) .footer-title:nth-of-type(2) {
+    margin-top: 50px;
+}
+
+.footer-sustainability {
+    margin-top: 98px;
+}
 
 
-
-
-
-
-
-
-
-
-
-/* Responsive adjustments to fit on Surface Pro 7 screen */
-@media (max-width: 1368px) {
-    .menubar h1 {
-        margin: 20px 0 20px 30px;
-    }
-
-    .menu {
-        margin-top: 30px;
-        margin-bottom: 20px;
+@media (max-width: 390px) {
+    /* Menubar adjustments */
+    .menubar {
+        padding: 0.625rem 0.625rem; /* Decrease padding */
     }
 
     .menu li {
-        margin-right: 30px;
+        margin-right: 1rem; /* Decrease margin between menu items */
     }
 
-    .menu li:last-child {
-        margin-right: 36px;
-    }
-
-    .menu li:nth-last-child(2) {
-        margin-right: 114px;
-    }
-
+    /* Background rectangle adjustments */
     .background-rectangle {
-        height: 80vh;
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Adjust height automatically */
+    }
+
+    .text-container {
+        padding: 2rem 1rem; /* Adjust padding */
     }
 
     .hero-image-container {
-        width: 50vw;
-        height: auto;
+        width: 100%; /* Adjust width */
+        height: auto; /* Adjust height automatically */
     }
 
     .hero-image-container img {
-        width: 100%;
-        height: auto;
+        border-radius: 0; /* Remove border radius */
+    }
+
+    /* Best sellers section adjustments */
+    .best-sellers-rectangle {
+        height: auto; /* Adjust height automatically */
+    }
+
+    .product-container {
+        flex-wrap: wrap; /* Allow products to wrap */
+        justify-content: center; /* Center products */
+    }
+
+    .product-card {
+        width: 90%; /* Adjust width */
+        margin: 0 auto 1rem; /* Center and add margin */
+    }
+
+    .shop-all-btn {
+        margin-top: 1rem; /* Adjust margin */
+    }
+
+    /* Mailing list section adjustments */
+    .mailing-list-section {
+        height: auto; /* Adjust height automatically */
+    }
+
+    .mailing-list-image-container {
+        width: 100%; /* Adjust width */
+        height: auto; /* Adjust height automatically */
+    }
+
+    .mailing-list-image-container img {
+        border-radius: 0; /* Remove border radius */
+    }
+
+    .mailing-list-content {
+        width: 90%; /* Adjust width */
+        margin: 2rem auto; /* Center and add margin */
+    }
+
+    .mailing-list-input input,
+    .mailing-list-input label,
+    .mailing-list-agreement label,
+    .subscribe-btn {
+        width: 100%; /* Adjust width */
+    }
+
+    /* About us section adjustments */
+    .about-us-rectangle {
+        height: auto; /* Adjust height automatically */
+    }
+
+    /* Product benefits section adjustments */
+    .product-benefits-section {
+        height: auto; /* Adjust height automatically */
+    }
+
+    .benefits-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .benefit-item {
+        width: 90%; /* Adjust width */
+        margin-bottom: 2rem; /* Adjust margin */
+    }
+
+    /* Footer adjustments */
+    .footer-section {
+        height: auto; /* Adjust height automatically */
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr; /* Change to single column layout */
+        gap: 2rem; /* Adjust gap */
+        padding: 2rem; /* Adjust padding */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1368px) {
+    .menubar {
+        width: 1368px;
+    }
+
+    
+    .background-rectangle {
+        width: 1410px;
+    }
+
+    .best-sellers-rectangle {
+        width: 1410px;
+    }
+
+    .mailing-list-section {
+        width: 1410px;
+    }
+    
+    .about-us-rectangle {
+        width: 1410px;
+    }
+    
+    .product-benefits-section {
+        width: 1410px;
+    }
+    
+    .footer-section {
+        width: 1410px;
+    }
+}
+
+
+
+/*
+.footer-center-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 65px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 568px;
+    gap: 50px;
+}
+
+.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-line-extended {
+    width: 100%;
+    max-width: 1182px;
+    height: 2px;
+    background-color: #96998E;
+    margin: 50px 0;
+}
+
+.footer-description {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--colour-lightyellow);
+    text-align: center;
+    margin: 31px 0;
+}
+
+.greenpalm-img {
+    margin: 31px 0;
+}
+
+.footer-powered {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--colour-lightyellow);
+    text-align: center;
+}
+*/
+
+
+
+
+
+
+
+
+
+

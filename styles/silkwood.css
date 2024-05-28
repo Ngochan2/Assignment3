@@ -1,0 +1,143 @@
+@import url(styles/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --colour-darkgreen: #30382D; 
+    --colour-darkcream: #E8DCC6;
+    --colour-lightyellow: #FDFAF0; 
+}
+
+/* Reset the default styling */
+body, h1, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--colour-lightyellow);
+}
+
+/* Styling the menubar */
+.menubar {
+    background-color: var(--colour-darkgreen);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.625rem 1.25rem;
+    font-family: 'Poppins';
+    height: 7.625rem;
+}
+
+/* Title Far North Soap styling */
+.menubar h1 {
+    margin: 2.564rem 0 1.75rem 3.75rem;
+}
+
+/* Far North Soap title styling */
+.menubar h1 a {
+    color: #FDFAF0;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 2.188rem;
+}
+
+/* Menu styling */
+.menu {
+    display: flex;
+    align-items: center;
+    margin-top: 3.813rem;
+    margin-bottom: 2.188rem;
+}
+
+/* Menu items styling with spacing specified */
+.menu li {
+    margin-right: 3.813rem;
+}
+
+.menu li:last-child {
+    margin-right: 4.563rem;
+}
+
+.menu li:nth-last-child(2) {
+    margin-right: 14.313rem;
+}
+
+/* Menu item styling */
+.menubar .menu li a {
+    color: var(--colour-lightyellow);
+    font-size: 1.063rem;
+    font-family: 'Poppins';
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+/* Hovering effect for menu items */
+.menu li a:hover {
+    color: var(--colour-darkcream);
+}
+
+/* Product page styling */
+.product-container {
+    display: flex;
+    margin-top: 115px;
+    margin-left: 129px;
+}
+
+.product-image {
+    width: 720px;
+    height: 707px;
+    border-radius: 0px 30px 30px 0px;
+    margin-right: 116px;
+    object-fit: cover;
+    margin-left: -129px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 168px;
+}
+
+.product-title {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--colour-darkgreen);
+}
+
+.product-description {
+    font-family: 'Goudy Bookletter 1911';
+    color: var(--colour-darkgreen);
+    font-size: 23px;
+    margin-top: 32px;
+    margin-right: 73px;
+}
+
+.product-price {
+    font-family: 'Goudy Bookletter 1911';
+    color: var(--colour-darkgreen);
+    font-size: 40px;
+    margin-top: 32px;
+}
+
+.product-quantity {
+    display: flex;
+    align-items: center;
+    margin-top: 54px;
+}
+
+.quantity-box {
+    width: 153px;
+    height: 51px;
+    background-color: var(--colour-lightyellow);
+    border-radius: 10px;
+    border: 2.5px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
