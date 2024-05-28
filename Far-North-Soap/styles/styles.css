@@ -376,6 +376,35 @@ body, h1, ul, li, a {
     color: var(--colour-darkgreen);
 }
 
+.mailing-list-agreement {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 138px;
+    margin-bottom: 37px;
+}
+
+.mailing-list-agreement input[type="checkbox"] {
+    display: none;
+}
+
+.mailing-list-agreement input[type="checkbox"] + label:before {
+    content: "";
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-right: 28px;
+    border: 2px solid var(--colour-darkgreen);
+    border-radius: 50%;
+    background-color: var(--colour-lightyellow);
+    cursor: pointer;
+}
+
+.mailing-list-agreement label {
+    font-family: 'Goudy Bookletter 1911';
+    font-size: 23px;
+    color: var(--colour-darkgreen);
+}
+
 .subscribe-btn:active {
     box-shadow: -9px 10px var(--colour-darkgreen);
     transform: translateY(4px);
