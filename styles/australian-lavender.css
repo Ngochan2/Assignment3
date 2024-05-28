@@ -1,0 +1,449 @@
+@import url(styles/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --colour-darkgreen: #30382D; 
+    --colour-darkcream: #E8DCC6;
+    --colour-lightyellow: #FDFAF0; 
+}
+
+/* Reset the default styling */
+body, h1, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--colour-lightyellow);
+}
+
+/* Styling the menubar */
+.menubar {
+    background-color: var(--colour-darkgreen);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.625rem 1.25rem;
+    font-family: 'Poppins';
+    height: 7.625rem;
+}
+
+/* Title Far North Soap styling */
+.menubar h1 {
+    margin: 2.564rem 0 1.75rem 3.75rem;
+}
+
+/* Far North Soap title styling */
+.menubar h1 a {
+    color: #FDFAF0;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 2.188rem;
+}
+
+/* Menu styling */
+.menu {
+    display: flex;
+    align-items: center;
+    margin-top: 3.813rem;
+    margin-bottom: 2.188rem;
+}
+
+/* Menu items styling with spacing specified */
+.menu li {
+    margin-right: 3.813rem;
+}
+
+.menu li:last-child {
+    margin-right: 4.563rem;
+}
+
+.menu li:nth-last-child(2) {
+    margin-right: 14.313rem;
+}
+
+/* Menu item styling */
+.menubar .menu li a {
+    color: var(--colour-lightyellow);
+    font-size: 1.063rem;
+    font-family: 'Poppins';
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+/* Hovering effect for menu items */
+.menu li a:hover {
+    color: var(--colour-darkcream);
+}
+
+
+
+
+/* Product page styling */
+.product-container {
+    display: flex;
+    margin-top: 115px;
+    margin-left: 129px;
+}
+
+.product-image {
+    width: 720px;
+    height: 707px;
+    border-radius: 0px 30px 30px 0px;
+    margin-right: 116px;
+    object-fit: cover;
+    margin-left: -129px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+.product-title {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--colour-darkgreen);
+}
+
+.product-description {
+    font-family: 'Goudy Bookletter 1911';
+    color: var(--colour-darkgreen);
+    font-size: 23px;
+    margin-top: 32px;
+    margin-right: 73px;
+}
+
+.product-price {
+    font-family: 'Goudy Bookletter 1911';
+    color: var(--colour-darkgreen);
+    font-size: 40px;
+    margin-top: 32px;
+}
+
+.product-quantity {
+    display: flex;
+    align-items: center;
+    margin-top: 54px;
+}
+
+.quantity-box {
+    font-family: 'Poppins';
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--colour-darkgreen);
+    width: 153px;
+    height: 51px;
+    background-color: var(--colour-lightyellow);
+    border-radius: 10px;
+    border: 2.5px solid #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.quantity-decrease, .quantity-increase {
+    cursor: pointer;
+}
+
+.quantity-number {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.add-to-cart-btn {
+    width: 321px;
+    height: 77px;
+    background-color: var(--colour-lightyellow);
+    border: 4px solid var(--colour-darkgreen);
+    border-radius: 10px;
+    margin-left: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    box-shadow: -9px 16px var(--colour-darkgreen);
+}
+
+.add-to-cart-btn:hover {
+    background-color: var(--colour-darkcream);
+}
+
+.add-to-cart-btn:active {
+    box-shadow: -9px 10px var(--colour-darkgreen);
+    transform: translateY(4px);
+}
+
+.wishlist {
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.wishlist-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.wishlist-text {
+    font-family: 'Goudy Bookletter 1911';
+    color: var(--colour-darkgreen);
+    font-size: 23px;
+    margin-left: 13px;
+}
+
+.divider {
+    border: none;
+    border-top: 2px solid #BFC0B5;
+    margin: 32px 130px 32px 0;
+}
+
+.additional-info {
+    margin-top: 21px
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-title {
+    font-family: 'Goudy Bookletter 1911';
+    color: var(--colour-darkgreen);
+    font-size: 23px;
+}
+
+.info-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 130px;
+}
+
+/* FAQ Section Styling */
+.faq-section {
+    margin-top: 150px;
+    margin-left: 20px;
+}
+
+.faq-title {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 60px;
+    color: var(--colour-darkgreen);
+    margin-left: 130px;
+}
+
+.faq-divider {
+    border: none;
+    border-top: 2px solid #BFC0B5;
+    margin: 20px 130px 0 130px;
+}
+
+.faq-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 130px;
+    margin-top: 44px;
+    margin-bottom: 44px;
+}
+
+.faq-question {
+    font-family: 'Goudy Bookletter 1911';
+    font-size: 25px;
+    color: var(--colour-darkgreen);
+}
+
+.faq-icon {
+    margin-right: 130px;
+    width: 24px;
+    height: 24px;
+}
+
+/* Recommendation Section Styling */
+.recommendation-section {
+    margin-top: 150px;
+}
+
+.recommendation-title {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--colour-darkgreen);
+    margin: 150px 0 40px 130px;
+}
+
+.recommendation-section .product-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px 130px;
+}
+
+.recommendation-section .product-card {
+    width: calc((100% - 260px) / 3);
+    margin-top: 72px;
+    position: relative;
+    text-align: center;
+}
+
+.recommendation-section .product-card img {
+    width: 345px;
+    height: 488px;
+    border-radius: 30px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.recommendation-section .product-details {
+    margin-top: 17px;
+    text-align: center;
+}
+
+.recommendation-section .product-name,
+.recommendation-section .product-description,
+.recommendation-section .product-price {
+    display: block;
+    margin: 10px 0;
+}
+
+.recommendation-section .product-name {
+    font-family: 'Poppins';
+    color: var(--colour-darkgreen);
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.recommendation-section .product-description {
+    font-family: 'Goudy Bookletter 1911';
+    color: var(--colour-darkgreen);
+    font-size: 18px;
+}
+
+.recommendation-section .product-price {
+    font-family: 'Goudy Bookletter 1911';
+    color: var(--colour-darkgreen);
+    font-size: 30px;
+}
+
+/* Shop All and About Us Section Styling */
+.additional-images-section {
+    margin-top: 266px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    position: relative;
+    margin-bottom: 267px;
+}
+
+.image-container img {
+    width: 890px;
+    height: 707px;
+    object-fit: cover;
+}
+
+.image-container:first-child img {
+    border-radius: 30px;
+}
+
+.image-container:last-child img {
+    border-radius: 30px;
+}
+
+.overlay-text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-text {
+    font-family: 'Goudy Bookletter 1911';
+    font-size: 60px;
+    color: var(--colour-lightyellow);
+}
+
+/* Footer styling */
+.footer-section {
+    width: 100%;
+    height: 650px;
+    background-color: var(--colour-darkgreen);
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 76px;
+    position: relative;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 147px;
+    width: calc(100% - 256px);
+    box-sizing: border-box;
+}
+
+.footer-column {
+    text-align: left;
+}
+
+.footer-title {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--colour-lightyellow);
+    margin-bottom: 9px;
+}
+
+.footer-line {
+    width: 300px;
+    height: 2px;
+    background-color: var(--colour-lightyellow);
+    margin-bottom: 7px;
+}
+
+.footer-item {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 19px;
+    color: var(--colour-lightyellow);
+    margin-bottom: 20px;
+}
+
+.footer-column:nth-child(1) .footer-title:nth-of-type(2) {
+    margin-top: 50px;
+}
+
+.footer-column:nth-child(2) .footer-title:nth-of-type(2) {
+    margin-top: 50px;
+}
+
+.footer-sustainability {
+    margin-top: 98px;
+}
