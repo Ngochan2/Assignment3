@@ -447,3 +447,35 @@ body {
 .footer-sustainability {
     margin-top: 98px;
 }
+
+
+
+
+
+
+/* Adjusting screen to surface pro 7 */
+@media (max-width: 1368px) {
+    .menubar {
+        width: 1460px;
+    }
+    
+    .faq-section {
+        width: 1460px;
+    }
+    
+    .product-container {
+        width: 1368px;
+    }
+    
+    .product-cards-container {
+        width: 1230px;
+    }
+
+    .additional-images-section {
+        width: 1500px;
+    }
+    
+    .footer-section {
+        width: 1500px;
+    }
+}

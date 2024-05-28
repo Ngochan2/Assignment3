@@ -661,7 +661,7 @@ body, h1, ul, li, a {
 
 
 
-
+/* Adjusting screen to surface pro 7 */
 @media (max-width: 1368px) {
     .menubar {
         width: 1368px;

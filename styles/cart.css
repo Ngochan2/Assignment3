@@ -1,0 +1,38 @@
+@import url(styles/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --colour-darkgreen: #30382D; 
+    --colour-darkcream: #E8DCC6;
+    --colour-lightyellow: #FDFAF0; 
+}
+
+/* Reset the default styling */
+body, h1, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--colour-lightyellow);
+    overflow-x: hidden;
+}
+
+.cart-page {
+    position: fixed;
+    top: 0;
+    right: -485px; /* Initially hidden outside the viewport */
+    width: 485px;
+    height: 100vh;
+    background-color: var(--colour-lightyellow); /* Light yellow */
+    transition: right 0.3s ease; /* Smooth transition when opening */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.show-cart {
+    right: 0; /* Move cart into view */
+}
