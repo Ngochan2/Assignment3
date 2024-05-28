@@ -76,7 +76,7 @@ body, h1, ul, li, a {
     color: var(--colour-darkcream);
 }
 
-/* Styling for the background rectangle section */
+/* Styling for the rectangle top section */
 .background-rectangle {
     width: 100%;
     height: 51.313rem;
@@ -411,12 +411,79 @@ body, h1, ul, li, a {
 }
 
 
+/* About Us section styling */
+.about-us-rectangle {
+    width: 100%;
+    height: 1101px;
+    background-color: var(--colour-lightyellow);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
+.about-us-rectangle .title-container {
+    width: 231px;
+    height: 70px;
+    text-transform: capitalize;
+    line-height: 70px;
+}
 
+.about-us-rectangle .shop-now-btn {
+    margin-top: 50px;
+}
 
+/* Product benefits section styling */
+.product-benefits-section {
+    background-color: var(--colour-lightyellow);
+    height: 1087px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
 
+.benefits-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin-top: 0;
+}
 
+.benefit-item {
+    text-align: center;
+    flex-basis: 30%;
+}
+
+.circle {
+    width: 191px;
+    height: 191px;
+    border-radius: 50%;
+    background-color: var(--colour-darkcream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 29px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.benefit-title {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--colour-darkgreen);
+    margin-bottom: 0;
+}
+
+.benefit-description {
+    font-family: 'Goudy Bookletter 1911';
+    font-size: 23px;
+    color: var(--colour-darkgreen);
+    margin-top: 0;
+}
 
 
 
