@@ -273,3 +273,70 @@ body {
     width: 24px;
     height: 24px;
 }
+
+/* Recommendation Section Styling */
+.recommendation-section {
+    margin-top: 150px;
+}
+
+.recommendation-title {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--colour-darkgreen);
+    margin: 150px 0 40px 130px;
+}
+
+.recommendation-section .product-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px 130px;
+}
+
+.recommendation-section .product-card {
+    width: calc((100% - 260px) / 3);
+    margin-top: 72px;
+    position: relative;
+    text-align: center;
+}
+
+.recommendation-section .product-card img {
+    width: 345px;
+    height: 488px;
+    border-radius: 30px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.recommendation-section .product-details {
+    margin-top: 17px;
+    text-align: center;
+}
+
+.recommendation-section .product-name,
+.recommendation-section .product-description,
+.recommendation-section .product-price {
+    display: block;
+    margin: 10px 0;
+}
+
+.recommendation-section .product-name {
+    font-family: 'Poppins';
+    color: var(--colour-darkgreen);
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.recommendation-section .product-description {
+    font-family: 'Goudy Bookletter 1911';
+    color: var(--colour-darkgreen);
+    font-size: 18px;
+}
+
+.recommendation-section .product-price {
+    font-family: 'Goudy Bookletter 1911';
+    color: var(--colour-darkgreen);
+    font-size: 30px;
+}
