@@ -133,16 +133,6 @@ body, h1, ul, li, a {
     margin-bottom: 56px;
 }
 
-/* Button shadow styling */
-.shop-now-shadow {
-    width: 283px;
-    height: 77px;
-    background-color: var(--colour-darkgreen);
-    border-radius: 10px;
-    position: absolute;
-    bottom: 420px;
-}
-
 /* Button styling */
 .shop-now-btn {
     width: 283px;
@@ -163,11 +153,17 @@ body, h1, ul, li, a {
     left: 138px;
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
+    box-shadow: -9px 16px var(--colour-darkgreen);
 }
 
 .shop-now-btn:hover {
-    background-color: var(--colour-darkgreen);
-    color: var(--colour-lightyellow);
+    background-color: var(--colour-darkcream);
+    color: var(--colour-darkgreen);
+}
+
+.shop-now-btn:active {
+    box-shadow: -9px 10px var(--colour-darkgreen);
+    transform: translateY(4px);
 }
 
 /* Styling for Best Sellers rectangle section */
@@ -195,7 +191,7 @@ body, h1, ul, li, a {
     gap: 74px;
     overflow-x: auto;
     width: 100%;
-    padding-bottom: 60px;
+    padding-bottom: 43px;
     scroll-behavior: smooth;
 }
 
@@ -232,23 +228,39 @@ body, h1, ul, li, a {
     color: var(--colour-darkgreen);
 }
 
-/* Creating horizontal scroll for the products */
-.products-container::-webkit-scrollbar {
-    height: 8px
-}
 
-.products-container::-webkit-scrollbar-thumb {
+/* Shop All button styling */
+.shop-all-btn {
+    width: 283px;
+    height: 77px;
+    border: 4px solid var(--colour-darkgreen);
+    border-radius: 10px;
     background-color: var(--colour-lightyellow);
-    border-radius: 4px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.4em;
+    color: var(--colour-darkgreen);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    box-shadow: -9px 16px var(--colour-darkgreen);
 }
 
-.products-container::-webkit-scrollbar-track {
-    background-color: var(--colour-lightyellow);
+.shop-all-btn:hover {
+    background-color: var(--colour-darkcream);
+    color: var(--colour-darkgreen);
 }
 
-
-
-
+.shop-all-btn:active {
+    box-shadow: -9px 10px var(--colour-darkgreen);
+    transform: translateY(4px);
+}
 
 
 
