@@ -80,6 +80,9 @@ body {
     color: var(--colour-darkcream);
 }
 
+
+
+
 /* Product page styling */
 .product-container {
     display: flex;
@@ -99,7 +102,7 @@ body {
 .product-details {
     display: flex;
     flex-direction: column;
-    margin-top: 168px;
+    margin-top: 0px;
 }
 
 .product-title {
@@ -131,13 +134,142 @@ body {
 }
 
 .quantity-box {
+    font-family: 'Poppins';
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--colour-darkgreen);
     width: 153px;
     height: 51px;
     background-color: var(--colour-lightyellow);
     border-radius: 10px;
     border: 2.5px solid #333;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0 10px;
+}
+
+.quantity-decrease, .quantity-increase {
+    cursor: pointer;
+}
+
+.quantity-number {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.add-to-cart-btn {
+    width: 321px;
+    height: 77px;
+    background-color: var(--colour-lightyellow);
+    border: 4px solid var(--colour-darkgreen);
+    border-radius: 10px;
+    margin-left: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    box-shadow: -9px 16px var(--colour-darkgreen);
+}
+
+.add-to-cart-btn:hover {
+    background-color: var(--colour-darkcream);
+}
+
+.add-to-cart-btn:active {
+    box-shadow: -9px 10px var(--colour-darkgreen);
+    transform: translateY(4px);
+}
+
+.wishlist {
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.wishlist-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.wishlist-text {
+    font-family: 'Goudy Bookletter 1911';
+    color: var(--colour-darkgreen);
+    font-size: 23px;
+    margin-left: 13px;
+}
+
+.divider {
+    border: none;
+    border-top: 2px solid #BFC0B5;
+    margin: 32px 130px 32px 0;
+}
+
+.additional-info {
+    margin-top: 21px
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-title {
+    font-family: 'Goudy Bookletter 1911';
+    color: var(--colour-darkgreen);
+    font-size: 23px;
+}
+
+.info-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 130px;
+}
+
+/* FAQ Section Styling */
+.faq-section {
+    margin-top: 150px;
+    margin-left: 20px;
+}
+
+.faq-title {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 60px;
+    color: var(--colour-darkgreen);
+    margin-left: 130px;
+}
+
+.faq-divider {
+    border: none;
+    border-top: 2px solid #BFC0B5;
+    margin: 20px 130px 0 130px;
+}
+
+.faq-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 130px;
+    margin-top: 44px;
+    margin-bottom: 44px;
+}
+
+.faq-question {
+    font-family: 'Goudy Bookletter 1911';
+    font-size: 25px;
+    color: var(--colour-darkgreen);
+}
+
+.faq-icon {
+    margin-right: 130px;
+    width: 24px;
+    height: 24px;
 }

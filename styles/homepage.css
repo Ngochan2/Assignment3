@@ -662,17 +662,14 @@ body, h1, ul, li, a {
 
 
 
-
-
-
 @media (max-width: 1368px) {
     .menubar {
         width: 1368px;
     }
-
     
     .background-rectangle {
         width: 1410px;
+        
     }
 
     .best-sellers-rectangle {
