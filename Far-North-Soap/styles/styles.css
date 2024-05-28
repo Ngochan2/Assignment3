@@ -100,6 +100,7 @@ body, h1, ul, li, a {
     height: 44.188rem;
     border-top-left-radius: 1.875rem;
     border-bottom-left-radius: 1.875rem;
+    object-fit: cover;
 }
 
 /* Text container styling */
@@ -261,6 +262,133 @@ body, h1, ul, li, a {
     box-shadow: -9px 10px var(--colour-darkgreen);
     transform: translateY(4px);
 }
+
+
+/* Mailing list styling section */
+.mailing-list-section {
+    background-color: var(--colour-darkcream);
+    height: 785px;
+}
+
+.mailing-list-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mailing-list-image-container {
+    width: 720px;
+    height: 707px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 39px;
+    margin-bottom: 39px;
+    position: relative;
+}
+
+.mailing-list-image-container img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.mailing-list-content {
+    width: 50%;
+}
+
+.mailing-list-title-rectangle {
+    position: relative;
+    width: 500px;
+    height: 150px;
+    margin-left: 223px;
+    margin-top: 75px;
+}
+
+.mailing-list-title-container {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 37px;
+    margin-right: 207px;
+    color: var(--colour-darkgreen);
+    display: flex;
+    margin-top: -37px;
+}
+
+.mailing-list-input {
+    margin-bottom: 37px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 37px;
+}
+
+.mailing-list-input label {
+    font-family: 'Goudy Bookletter 1911';
+    font-size: 23px;
+    color: var(--colour-darkgreen);
+    margin-left: 159px;
+}
+
+.mailing-list-input input {
+    width: 448px;
+    height: 50px;
+    border-radius: 20px;
+    border: 4px solid var(--colour-darkgreen);
+    background-color: var(--colour-lightyellow);
+    padding: 10px;
+    font-family: 'Goudy Bookletter 1911';
+    font-size: 23px;
+    margin-left: 138px;
+}
+
+.mailing-list-input input::placeholder {
+    color: rgba(48, 56, 45, 0.5);
+}
+
+.subscribe-btn {
+    width: 283px;
+    height: 77px;
+    border: 4px solid var(--colour-darkgreen);
+    border-radius: 10px;
+    background-color: var(--colour-lightyellow);
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.4em;
+    color: var(--colour-darkgreen);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    box-shadow: -9px 16px var(--colour-darkgreen);
+}
+
+.subscribe-btn:hover {
+    background-color: var(--colour-darkcream);
+    color: var(--colour-darkgreen);
+}
+
+.subscribe-btn:active {
+    box-shadow: -9px 10px var(--colour-darkgreen);
+    transform: translateY(4px);
+}
+
+
+
+
+
+
+
+
+
 
 
 
