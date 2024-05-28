@@ -14,6 +14,7 @@ body, h1, ul, li, a {
     padding: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 /* Styling the menubar */
@@ -21,9 +22,8 @@ body, h1, ul, li, a {
     background-color: var(--colour-darkgreen);
     display: flex;
     justify-content: space-between;
-    justify-items: center;
     padding: 0.625rem 1.25rem;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins';
     height: 7.625rem;
 }
 
@@ -35,7 +35,7 @@ body, h1, ul, li, a {
 /* Far North Soap title styling */
 .menubar h1 a {
     color: #FDFAF0;
-    font-family: 'poppins';
+    font-family: 'Poppins';
     font-weight: 600;
     font-size: 2.188rem;
 }
@@ -65,7 +65,7 @@ body, h1, ul, li, a {
 .menubar .menu li a {
     color: var(--colour-lightyellow);
     font-size: 1.063rem;
-    font-family: 'poppins';
+    font-family: 'Poppins';
     font-weight: 400;
     text-transform: uppercase;
     transition: color 0.3s ease;
@@ -83,15 +83,13 @@ body, h1, ul, li, a {
     background-color: var(--colour-darkcream);
     position: relative;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 }
 
 .hero-image-container {
-    position: relative;
     width: 45rem;
     height: 44.188rem;
-    margin-right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,7 +115,7 @@ body, h1, ul, li, a {
 .title-container {
     width: 449px;
     height: 150px;
-    font-family: 'poppins';
+    font-family: 'Poppins';
     font-weight: 700;
     font-size: 50px;
     color: var(--colour-darkgreen);
@@ -142,7 +140,7 @@ body, h1, ul, li, a {
     background-color: var(--colour-darkgreen);
     border-radius: 10px;
     position: absolute;
-    bottom: 210px;
+    bottom: 420px;
 }
 
 /* Button styling */
@@ -171,6 +169,96 @@ body, h1, ul, li, a {
     background-color: var(--colour-darkgreen);
     color: var(--colour-lightyellow);
 }
+
+/* Styling for Best Sellers rectangle section */
+.best-sellers-rectangle {
+    width: 100%;
+    height: 1133px;
+    background-color: var(--colour-lightyellow);
+    position: relative;
+    padding-top: 116px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.best-sellers-title {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--colour-darkgreen);
+    margin-bottom: 43px;
+}
+
+.product-container {
+    display: flex;
+    gap: 74px;
+    overflow-x: auto;
+    width: 100%;
+    padding-bottom: 60px;
+    scroll-behavior: smooth;
+}
+
+.product-card {
+    width: 344px;
+    height: 647px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 74px;
+    margin-left: 74px;
+}
+
+.product-image {
+    width: 344px;
+    height: 485.6px;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.product-name {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--colour-darkgreen);
+    margin-top: 17.4px;
+}
+
+.product-price {
+    font-family: 'Goudy Bookletter 1911';
+    font-size: 37px;
+    color: var(--colour-darkgreen);
+}
+
+/* Creating horizontal scroll for the products */
+.products-container::-webkit-scrollbar {
+    height: 8px
+}
+
+.products-container::-webkit-scrollbar-thumb {
+    background-color: var(--colour-lightyellow);
+    border-radius: 4px;
+}
+
+.products-container::-webkit-scrollbar-track {
+    background-color: var(--colour-lightyellow);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive adjustments to fit on Surface Pro 7 screen */
 @media (max-width: 1368px) {
