@@ -214,11 +214,50 @@ body {
 
 
 
-
+/* Adjusting screen to iphone 12 pro */
 @media screen and (max-width: 390px) {
+    
+    .shop-all-title{
+        font-size: 120px;
+    }
+    
+    .shop-all-description {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+    
+    .product-cards-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .product-card {
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    .product-card img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+    
+    .product-card .product-name {
+        font-size: 100px;
+        margin-bottom: 50px;
+    }
+    
+    .product-card .product-description {
+        font-size: 60px;
+        margin-bottom: 50px;
+    }
+    
+    .product-card .product-price {
+        font-size: 100px;
+        margin-bottom: 150px;
+    }
 }
-
-
 
 /* Adjusting screen to surface pro 7 */
 @media (max-width: 1368px) {
