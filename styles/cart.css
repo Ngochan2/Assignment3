@@ -110,6 +110,7 @@ body {
     color: var(--colour-darkgreen);
     cursor: pointer;
     text-transform: uppercase;
+    letter-spacing: 0.3em;
     box-shadow: -9px 16px var(--colour-darkgreen);
 }
 
@@ -178,6 +179,36 @@ body {
 .footer-sustainability {
     margin-top: 98px;
 }
+
+
+
+
+/* Adjusting screen to iPhone 12 pro */
+@media (max-width: 390px) {
+    .empty-cart-container {
+        height: 2300px;
+    }
+    
+    .empty-cart-text {
+        font-size: 80px;
+    }
+    
+    .checkout-button {
+        margin-top: 150px;
+        width: 600px;
+        height: 110px;
+        font-size: 36px;
+        box-shadow: -19px 24px var(--colour-darkgreen);
+        font-weight: 700;
+        letter-spacing: 0.3em;
+    }
+}
+
+
+
+
+
+
 
 
 /* Adjusting screen to surface pro 7 */
