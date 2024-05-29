@@ -583,16 +583,21 @@ body {
     }
     
     .recommendation-section .product-card img {
-        width: 449px;
-        height: 651px;
+        width: 674px;
+        height: 977px;
+        margin-left: -180px;
     }
     
     .recommendation-section .product-name {
-        font-size: 40px;
+        font-size: 60px;
+        width: 800px;
+        margin-left: -270px;
     }
     
     .recommendation-section .product-description {
-        font-size: 25px;
+        font-size: 40px;
+        width: 600px;
+        margin-left: -160px;
     }
     
     .recommendation-section .product-price {
@@ -602,6 +607,10 @@ body {
     .additional-images-section {
         align-items: center;
         width: 100%;
+    }
+    
+    .image-container img {
+        width: 1200px;
     }
     
     
