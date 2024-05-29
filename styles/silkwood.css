@@ -130,7 +130,9 @@ body {
 .product-quantity {
     display: flex;
     align-items: center;
+    align-items: center;
     margin-top: 54px;
+    gap: 50px;
 }
 
 .quantity-box {
@@ -484,18 +486,23 @@ body {
         font-size: 53px;
     }
     
+    .product-quantity {
+        flex-direction: row;
+        gap: 90px;  
+    }
+    
     .quantity-box {
         font-size: 33px;
         width: 204px;
         height: 68px;
-        margin-right: 60px;
+        margin-right: 40px;
     }
     
     .add-to-cart-btn {
         margin: 20px 0px;
         width: 417px;
         height: 100px;
-        margin-left: 57px;
+        margin-left: 80px;
         font-size: 27px;
         letter-spacing: 3.64px;
     }
@@ -513,10 +520,6 @@ body {
         font-size: 37px;
     }
     
-    .divider {
-        margin: 40px 0;
-        width: 100%;
-    }
     
     .additional-info {
         align-items: center;
@@ -552,10 +555,7 @@ body {
         width: 85%;
         margin: 40px auto;
     }
-    
-    .faq-item {
-    }
-    
+
     .faq-question {
         font-size: 33px;
     }
@@ -582,8 +582,31 @@ body {
         font-size: 67px;
     }
     
+    .recommendation-section .product-card img {
+        width: 449px;
+        height: 651px;
+    }
+    
+    .recommendation-section .product-name {
+        font-size: 40px;
+    }
+    
+    .recommendation-section .product-description {
+        font-size: 25px;
+    }
+    
+    .recommendation-section .product-price {
+        font-size: 53px;
+    }
+    
     .additional-images-section {
         align-items: center;
+        width: 100%;
+    }
+    
+    
+    .overlay-text {
+        font-size: 80px;
     }
     
 }
