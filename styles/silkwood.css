@@ -449,6 +449,152 @@ body {
     margin-top: 98px;
 }
 
+
+/* Adjusting screen to iPhone 12 pro */
+@media (max-width: 390px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 50px;
+    }
+    
+    .product-image {
+        width: 80%;
+        height: auto;
+        margin: 30px;
+        border-radius: 30px;
+    }
+    
+    .product-details {
+        margin: 20px;
+        text-align: center;
+    }
+    
+    .product-title {
+        font-size: 67px;
+    }
+    
+    .product-description {
+        font-size: 35px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    .product-price {
+        font-size: 53px;
+    }
+    
+    .quantity-box {
+        font-size: 33px;
+        width: 204px;
+        height: 68px;
+        margin-right: 60px;
+    }
+    
+    .add-to-cart-btn {
+        margin: 20px 0px;
+        width: 417px;
+        height: 100px;
+        margin-left: 57px;
+        font-size: 27px;
+        letter-spacing: 3.64px;
+    }
+    
+    .wishlist {
+        justify-content: center;
+    }
+    
+    .wishlist-icon {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .wishlist-text {
+        font-size: 37px;
+    }
+    
+    .divider {
+        margin: 40px 0;
+        width: 100%;
+    }
+    
+    .additional-info {
+        align-items: center;
+    }
+    
+    .info-title {
+        font-size: 31px;
+        margin-left: 70px;
+    }
+    
+    .info-icon {
+        width: 31px;
+        height: 31px;
+        margin-right: 70px;
+    }
+    
+    .divider {
+        width: 90%;
+        margin: 40px auto;
+    }
+    
+    .faq-section {
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    .faq-title {
+        font-size: 80px;
+        text-align: center;
+    }
+    
+    .faq-divider {
+        width: 85%;
+        margin: 40px auto;
+    }
+    
+    .faq-item {
+    }
+    
+    .faq-question {
+        font-size: 33px;
+    }
+    
+    .faq-icon {
+        width: 31px;
+        height: 31px;
+    }
+    
+    .product-cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .product-card {
+        width: 90%;
+        margin: 20px 0;
+    }
+    
+    .recommendation-title {
+        width: 500px;
+        text-align: center;
+        margin-left: 500px;
+        font-size: 67px;
+    }
+    
+    .additional-images-section {
+        align-items: center;
+    }
+    
+}
+
+
+
+
+
+
+
+
 /* Adjusting screen to surface pro 7 */
 @media (max-width: 1368px) {
     .menubar {
