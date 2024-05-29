@@ -43,6 +43,7 @@ body, h1, ul, li, a {
 /* Menu styling */
 .menu {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 3.813rem;
     margin-bottom: 2.188rem;
@@ -549,110 +550,145 @@ body, h1, ul, li, a {
 
 
 @media (max-width: 390px) {
-    /* Menubar adjustments */
+    
     .menubar {
-        padding: 0.625rem 0.625rem; /* Decrease padding */
+        padding: 0.625rem 0.625rem; 
+        display: flex;
+        flex-wrap: wrap;
     }
 
+    .menubar h1 a {
+        font-size: 60px;
+        margin-bottom: 50px;
+    }
+    
     .menu li {
-        margin-right: 1rem; /* Decrease margin between menu items */
+        margin-right: 1rem;
     }
 
-    /* Background rectangle adjustments */
     .background-rectangle {
-        flex-direction: column; /* Stack items vertically */
-        height: auto; /* Adjust height automatically */
+        flex-direction: column; 
+        height: auto; 
     }
-
+    
+    
     .text-container {
-        padding: 2rem 1rem; /* Adjust padding */
+        position: relative;
+        width: 100%;
+        padding: 2rem 1rem; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .hero-image-container {
-        width: 100%; /* Adjust width */
-        height: auto; /* Adjust height automatically */
+        width: 100%; 
+        height: auto; 
     }
 
     .hero-image-container img {
-        border-radius: 0; /* Remove border radius */
+        border-radius: 0;
+    }
+    
+    .hero-image {
+        width: 336px;
+        height: 100px;
     }
 
-    /* Best sellers section adjustments */
     .best-sellers-rectangle {
-        height: auto; /* Adjust height automatically */
+        height: auto; 
     }
 
     .product-container {
-        flex-wrap: wrap; /* Allow products to wrap */
-        justify-content: center; /* Center products */
+        flex-wrap: wrap;
+        justify-content: center; 
     }
 
     .product-card {
-        width: 90%; /* Adjust width */
-        margin: 0 auto 1rem; /* Center and add margin */
+        width: 90%; 
+        margin: 0 auto 1rem; 
     }
 
     .shop-all-btn {
-        margin-top: 1rem; /* Adjust margin */
+        margin-top: 1rem; 
     }
 
-    /* Mailing list section adjustments */
+    
     .mailing-list-section {
-        height: auto; /* Adjust height automatically */
+        height: auto; 
     }
 
     .mailing-list-image-container {
-        width: 100%; /* Adjust width */
-        height: auto; /* Adjust height automatically */
+        width: 100%; 
+        height: auto; 
     }
 
     .mailing-list-image-container img {
-        border-radius: 0; /* Remove border radius */
+        border-radius: 0; 
     }
 
     .mailing-list-content {
-        width: 90%; /* Adjust width */
-        margin: 2rem auto; /* Center and add margin */
+        width: 90%; 
+        margin: 2rem auto;
     }
 
     .mailing-list-input input,
     .mailing-list-input label,
     .mailing-list-agreement label,
     .subscribe-btn {
-        width: 100%; /* Adjust width */
+        width: 100%; 
     }
 
-    /* About us section adjustments */
+
     .about-us-rectangle {
-        height: auto; /* Adjust height automatically */
+        height: auto;
     }
 
-    /* Product benefits section adjustments */
+    
     .product-benefits-section {
-        height: auto; /* Adjust height automatically */
+        height: auto; 
     }
 
     .benefits-container {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .benefit-item {
-        width: 90%; /* Adjust width */
-        margin-bottom: 2rem; /* Adjust margin */
+        width: 90%; 
+        margin-bottom: 2rem; 
     }
 
-    /* Footer adjustments */
+   
     .footer-section {
-        height: auto; /* Adjust height automatically */
+        height: auto;
     }
 
-    .footer-container {
-        grid-template-columns: 1fr; /* Change to single column layout */
-        gap: 2rem; /* Adjust gap */
-        padding: 2rem; /* Adjust padding */
+    
+    .footer-title {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .footer-item {
+        display: none;
+    }
+    
+    .footer-line {
+        display: none;
+    }
+    
+    .footer-column:nth-child(1) .footer-title:nth-of-type(2) {
+        margin-top: 0;
+    }
+    
+    .footer-column:nth-child(2) .footer-title:nth-of-type(2) {
+        margin-top: 0;
     }
 }
+
+
 
 
 
