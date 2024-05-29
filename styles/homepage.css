@@ -640,7 +640,7 @@ body, h1, ul, li, a {
     }
     
     .mailing-list-section {
-        height: 800px; 
+        height: 780px; 
     }
 
     .mailing-list-image-container {
@@ -657,17 +657,49 @@ body, h1, ul, li, a {
     }
 
     .mailing-list-input input,
-    .mailing-list-input label,
-    .mailing-list-agreement label,
     .subscribe-btn {
-        width: 100%; 
+        width: 60%; 
+    }
+    
+    .mailing-list-input label {
+        margin-left: -270px;
+    }
+    
+    .mailing-list-agreement label br {
+        display: none;
     }
 
 
     .about-us-rectangle {
         height: auto;
     }
+    
+    .about-us-rectangle .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    
+    .about-us-rectangle .description-container,
+    .about-us-rectangle .shop-now-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .about-us-rectangle .title-container {
+        margin-top: -250px;
+    }
+    
+    .about-us-rectangle .shop-now-btn {
+        margin-top: 38rem;
+        margin-left: -24rem;
+        margin-top: 350px;
+    }
 
+    
     
     .product-benefits-section {
         height: auto; 
