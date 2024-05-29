@@ -695,57 +695,6 @@ body, h1, ul, li, a {
 
 
 
-/*
-.footer-center-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 65px;
-}
-
-.footer-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 568px;
-    gap: 50px;
-}
-
-.icon-circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-line-extended {
-    width: 100%;
-    max-width: 1182px;
-    height: 2px;
-    background-color: #96998E;
-    margin: 50px 0;
-}
-
-.footer-description {
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 15px;
-    color: var(--colour-lightyellow);
-    text-align: center;
-    margin: 31px 0;
-}
-
-.greenpalm-img {
-    margin: 31px 0;
-}
-
-.footer-powered {
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 15px;
-    color: var(--colour-lightyellow);
-    text-align: center;
-}
-*/
 
 
 
