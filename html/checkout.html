@@ -42,6 +42,26 @@
         <div class="input-container">
             <input type="text" placeholder="City, State, Postcode" class="delivery-input">
         </div>
+        
+        <h2>Payment</h2>
+        <div class="payment-option-container">
+            <div class="payment-option">
+                <input type="radio" id="credit-card" name="payment" class="payment-radio">
+                <label for="credit-card" class="payment-label">Credit card</label>
+                <div class="payment-icons">
+                    <img src="/images/visa.jpg" alt="Visa icon">
+                    <img src="/images/mastercard.jpg" alt="Mastercard icon">
+                    <img src="/images/amex.jpg" alt="Amex icon">
+                </div>
+            </div>
+            <div class="payment-option">
+                <input type="radio" id="paypal" name="payment" class="payment-radio">
+                <label for="paypal" class="payment-label">Paypal</label>
+                <img src="/images/paypal.jpg" alt="Paypal icon" class="paypal-icon">
+            </div>
+        </div>
+        
+        <a href="/html/confirmation.html"><button class="pay-now-button">Pay now</button></a>
     </div>
 </body>
 </html>

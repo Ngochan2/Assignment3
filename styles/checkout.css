@@ -114,3 +114,70 @@ body {
     margin-top: 37px;
     margin-bottom: 14px;
 }
+
+/* Payment styling */
+.payment-option-container {
+    margin-top: 37px;
+}
+
+.payment-option {
+    width: 632px;
+    height: 57px;
+    border: 1px solid #979B96;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 21px;
+}
+
+.payment-radio {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    margin-left: 28px;
+    margin-right: 14px;
+}
+
+.payment-label {
+    font-family: 'Poppins';
+    font-size: 13px;
+    color: #595F54;
+}
+
+.payment-icons {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 49px;
+}
+
+.payment-icons img {
+    width: 35px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.payment-icons img:last-child {
+    margin-right: 0;
+}
+
+.paypal-icon {
+    position: absolute;
+    right: 49px;
+}
+
+.pay-now-button {
+    width: 632px;
+    height: 57px;
+    background-color: var(--colour-darkgreen);
+    color: var(--colour-lightyellow);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 37px;
+}
