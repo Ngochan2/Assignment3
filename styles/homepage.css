@@ -549,6 +549,18 @@ body, h1, ul, li, a {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 390px) {
     
     .menubar {
@@ -568,7 +580,7 @@ body, h1, ul, li, a {
 
     .background-rectangle {
         flex-direction: column; 
-        height: auto; 
+        height: 1240px; 
     }
     
     
@@ -581,6 +593,14 @@ body, h1, ul, li, a {
         align-items: center;
         text-align: center;
     }
+    
+    .shop-now-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 580px;
+    }
 
     .hero-image-container {
         width: 100%; 
@@ -588,7 +608,9 @@ body, h1, ul, li, a {
     }
 
     .hero-image-container img {
-        border-radius: 0;
+        border-radius: 30px;
+        margin-bottom: 40px;
+        margin-top: 40px;
     }
     
     .hero-image {
@@ -597,31 +619,32 @@ body, h1, ul, li, a {
     }
 
     .best-sellers-rectangle {
-        height: auto; 
+        height: 1800px;
     }
 
     .product-container {
+        display: flex;
         flex-wrap: wrap;
-        justify-content: center; 
+        justify-content: center;
+        gap: 25px; 
     }
-
+    
     .product-card {
         width: 90%; 
         margin: 0 auto 1rem; 
+        flex: 1 1 calc(50% - 25px);
     }
 
     .shop-all-btn {
-        margin-top: 1rem; 
+        margin-top: 0; 
     }
-
     
     .mailing-list-section {
-        height: auto; 
+        height: 800px; 
     }
 
     .mailing-list-image-container {
-        width: 100%; 
-        height: auto; 
+       display: none;
     }
 
     .mailing-list-image-container img {
@@ -629,8 +652,8 @@ body, h1, ul, li, a {
     }
 
     .mailing-list-content {
-        width: 90%; 
-        margin: 2rem auto;
+        margin: auto;
+        text-align: center;
     }
 
     .mailing-list-input input,
