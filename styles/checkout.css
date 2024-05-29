@@ -188,8 +188,7 @@ body {
     top: 178px;
     right: 128px;
     width: 450px;
-    height: 517px;
-    border: 1px solid #96998E;
+    height: 385px;
 }
 
 .order-summary-item {
@@ -254,4 +253,25 @@ body {
     font-size: 17px;
     cursor: pointer;
     margin-left: auto;
+}
+
+.total-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.total-label {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 25px;
+    color: var(--colour-darkgreen);
+}
+
+.total-price {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 25px;
+    color: var(--colour-darkgreen);
 }
