@@ -50,15 +50,6 @@ body {
     width: 100%;
 }
 
-.vertical-divider {
-    height: 1000px;
-    width: 2px;
-    background-color: #96998E;
-    margin-left: 814px;
-    position: absolute;
-    top: 123px;
-}
-
 .contact-section {
     position: abosolute;
     margin-left: 128px;
@@ -169,7 +160,7 @@ body {
 }
 
 .pay-now-button {
-    width: 632px;
+    width: 635px;
     height: 57px;
     background-color: var(--colour-darkgreen);
     color: var(--colour-lightyellow);
@@ -180,15 +171,17 @@ body {
     font-weight: 700;
     cursor: pointer;
     margin-top: 37px;
+    margin-bottom: 37px;
 }
 
 /* Order Summary Styling */
 .order-summary-container {
-    position: absolute;
-    top: 178px;
+    position: relative;
+    top: 14px;
     right: 128px;
-    width: 450px;
+    width: 635px;
     height: 385px;
+    margin-left: 120px;
 }
 
 .order-summary-item {
@@ -233,7 +226,7 @@ body {
 }
 
 .coupon-input {
-    width: 300px;
+    width: 490px;
     height: 57px;
     border: 1.5px solid #8C8A7A;
     border-radius: 5px;
@@ -274,4 +267,18 @@ body {
     font-weight: 600;
     font-size: 25px;
     color: var(--colour-darkgreen);
+}
+
+
+@media (max-width: 1368px) {
+    
+    .checkout-menubar {
+        width: 1200px;
+    }
+    
+    .menubar-divider {
+        width: 1368px
+    }
+    
+
 }
