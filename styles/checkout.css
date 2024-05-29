@@ -51,7 +51,7 @@ body {
 }
 
 .vertical-divider {
-    height: 1395px;
+    height: 1000px;
     width: 2px;
     background-color: #96998E;
     margin-left: 814px;
@@ -117,7 +117,7 @@ body {
 
 /* Payment styling */
 .payment-option-container {
-    margin-top: 37px;
+    margin-top: 14px;
 }
 
 .payment-option {
@@ -180,4 +180,49 @@ body {
     font-weight: 700;
     cursor: pointer;
     margin-top: 37px;
+}
+
+/* Order Summary Styling */
+.order-summary-container {
+    position: absolute;
+    top: 178px;
+    right: 128px;
+    width: 450px;
+    height: 517px;
+    border: 1px solid #96998E;
+}
+
+.order-summary-item {
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 100px;
+    margin-top: 24px;
+}
+
+.order-summary-item:first-child {
+    margin-top: 0;
+}
+
+.order-summary-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.order-summary-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 25px;
+}
+
+.order-summary-name,
+.order-summary-price {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--colour-darkgreen);
 }
