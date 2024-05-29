@@ -226,3 +226,32 @@ body {
     font-size: 18px;
     color: var(--colour-darkgreen);
 }
+
+.coupon-input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.coupon-input {
+    width: 300px;
+    height: 57px;
+    border: 1.5px solid #8C8A7A;
+    border-radius: 5px;
+    padding-left: 21px;
+    font-family: 'Poppins';
+    font-size: 17px;
+}
+
+.apply-button {
+    width: 102px;
+    height: 62px;
+    border: 1.5px solid #8C8A7A;
+    border-radius: 5px;
+    background-color: #E8DCC6;
+    color: var(--colour-darkgreen);
+    font-family: 'Poppins';
+    font-size: 17px;
+    cursor: pointer;
+    margin-left: auto;
+}
