@@ -193,6 +193,68 @@ body {
 }
 
 
+/* Adjusting screen to iPhone 12 pro */
+@media (max-width: 390px) {
+    .confirmation-container {
+        height: 2300px;
+    }
+    
+    .confirmation-title {
+        font-size: 80px;
+        margin-bottom: 50px;
+    }
+    
+    .order-number {
+        font-size: 50px;
+        margin-bottom: 100px;
+    }
+    
+    .order-button {
+        width: 900px;
+        height: 130px;
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .continue-shopping a {
+        font-size: 50px;
+    }
+}
+
+
+/* Adjusting screen to iPhone 12 pro */
+/*
+@media (max-width: 390px) {
+    .empty-cart-container {
+        height: 2300px;
+    }
+    
+    .empty-cart-text {
+        font-size: 80px;
+    }
+    
+    .checkout-button {
+        margin-top: 150px;
+        width: 600px;
+        height: 110px;
+        font-size: 36px;
+        box-shadow: -19px 24px var(--colour-darkgreen);
+        font-weight: 700;
+        letter-spacing: 0.3em;
+    }
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
 /* Adjusting screen to surface pro 7 */
 @media (max-width: 1368px) {
     .menubar {
