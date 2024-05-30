@@ -79,7 +79,6 @@ body {
 }
 .subscribe-container {
     display: flex;
-    align-items: center;
     margin-top: 23px;
 }
 .subscribe-checkbox {
@@ -163,8 +162,11 @@ body {
     right: 128px;
     width: 450px;
     height: 517px;
-    border: 1px solid #96998E;
     height: 385px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: none;
 }
 
 .order-summary-item {
@@ -247,7 +249,104 @@ body {
 
 
 
+/* Adjusting screen to iPhone 12 pro */
+@media (max-width: 390px) {
+    
+    .order-summary-container {
+        position: relative;
+        top: 14px;
+        right: 128px;
+        width: 635px;
+        height: 385px;
+        margin-left: 255px;
+    }
+    
+    .contact-section h2 {
+        font-size: 60px;
+    }
+    
+    .vertical-divider {
+        display: none;
+    }
+    
+    .contact-input,
+    .delivery-input,
+    .payment-option { 
+        width: 1100px;
+        height: 150px;
+    }
+    
+    
+    .coupon-input {
+        width: 800px;
+        height: 100px;
+    }
+    
+    .apply-button {
+        width: 200px;
+    }
+    
+    .pay-now-button {
+        width: 1100px;
+        height: 100px;
+    }
+    
+    .contact-section .contact-input,
+    .contact-section .delivery-input,
+    .contact-section .coupon-input,
+    .payment-label {
+        font-size: 30px;
+    }
+    
+    .subscribe-container {
+        width: 800px;
+    }
+    
+    .subscribe-checkbox {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .subscribe-label {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    
+    .order-summary-container {
+        width: 1100px;
+        height: 800px;
+        position: relative;
+    }
+    
+    .order-summary-image {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        width: 300px;
+        height: 300px;
+    }
+    
+    .order-summary-item {
+        width: 1100px;
+        height: 500px;
+        border: none;
+    }
 
+    
+    .order-summary-name {
+        font-size: 45px;
+    }
+    
+    .order-summary-price {
+        font-size: 45px;
+        text-align: right;
+    }
+    
+    .coupon-input-container {
+        margin-top: 50px;
+        width: 1100px;
+        height: 150px
+    }
+}
 
 
 
