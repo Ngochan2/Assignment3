@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/checkout.css">
+    <link rel="stylesheet" href="/styles/checkout2.css">
     <script src="script.js"></script>
     <title>Checkout Page</title>
 </head>
@@ -11,11 +11,12 @@
     <!-- Menubar for the checkout page -->
     <nav class="checkout-menubar">
         <h1 class="menubar-title"><a href="/html/homepage.html">Far North Soap</a></h1>
-        <a href="/html/cart-page.html"><img src="/images/cart-without-number.svg" alt="Cart icon"></a>
+        <img src="/images/cart-without-number.svg" alt="Cart icon">
     </nav>
     <div class="menubar-divider"></div>
     
-
+    <!-- Vertical Divider -->
+    <div class="vertical-divider"></div>
     
     <!-- Checkout Section -->
     <div class="contact-section">
@@ -60,8 +61,9 @@
             </div>
         </div>
         
-        <!-- Order Summary Section -->
-        <h2>Order Summary</h2>
+    </div>
+    
+    <!-- Order Summary Section -->
     <div class="order-summary-container">
         <div class="order-summary-item">
             <img src="/images/silkwood-checkout.jpg" alt="Silkwood soap" class="order-summary-image">
@@ -82,16 +84,12 @@
             <input type="text" class="coupon-input" placeholder="Coupon code or gift voucher">
             <button class="apply-button">Apply</button>
         </div>
-        
+
         <div class="total-section">
             <span class="total-label">Total</span>
             <span class="total-price">$ 0</span>
         </div>
-        
         <a href="/html/confirmation.html"><button class="pay-now-button">Pay now</button></a>
-    </div>
-    
-    
     </div>
 </body>
 </html>
