@@ -159,7 +159,7 @@ body {
 /* Order Summary Styling */
 .order-summary-container {
     position: absolute;
-    top: 178px;
+    top: 150px;
     right: 128px;
     width: 450px;
     height: 517px;
@@ -167,15 +167,14 @@ body {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    border: 2px solid black;
 }
 
 .order-summary-container h2 {
-    text-decoration: none;
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 30px;
     color: var(--colour-darkgreen);
+    margin-top: 0;
 }
 
 .order-summary-item {
@@ -270,7 +269,8 @@ body {
         margin-left: 255px;
     }
     
-    .contact-section h2 {
+    .contact-section h2,
+    .order-summary-container h2 {
         font-size: 60px;
     }
     
@@ -342,7 +342,7 @@ body {
     .order-summary-item {
         width: 1100px;
         height: 500px;
-        margin-top: -20px;
+        margin-top: -40px;
     }
 
     
