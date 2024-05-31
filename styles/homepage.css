@@ -3,13 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
-    --colour-darkgreen: #30382D; 
+    --colour-darkgreen: #30382D;
     --colour-darkcream: #E8DCC6;
-    --colour-lightyellow: #FDFAF0; 
+    --colour-lightyellow: #FDFAF0;
 }
 
 /* Reset the default styling */
-body, h1, ul, li, a {
+body,
+h1,
+ul,
+li,
+a {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -388,7 +392,7 @@ body, h1, ul, li, a {
     display: none;
 }
 
-.mailing-list-agreement input[type="checkbox"] + label:before {
+.mailing-list-agreement input[type="checkbox"]+label:before {
     content: "";
     display: inline-block;
     width: 19px;
@@ -562,9 +566,9 @@ body, h1, ul, li, a {
 
 /* Adjusting screen to iPhone 12 pro */
 @media (max-width: 390px) {
-    
+
     .menubar {
-        padding: 0.625rem 0.625rem; 
+        padding: 0.625rem 0.625rem;
         display: flex;
         flex-wrap: wrap;
     }
@@ -573,27 +577,27 @@ body, h1, ul, li, a {
         font-size: 60px;
         margin-bottom: 50px;
     }
-    
+
     .menu li {
         margin-right: 1rem;
     }
 
     .background-rectangle {
-        flex-direction: column; 
-        height: 1240px; 
+        flex-direction: column;
+        height: 1240px;
     }
-    
-    
+
+
     .text-container {
         position: relative;
         width: 100%;
-        padding: 2rem 1rem; 
+        padding: 2rem 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    
+
     .shop-now-btn {
         display: flex;
         justify-content: center;
@@ -603,8 +607,8 @@ body, h1, ul, li, a {
     }
 
     .hero-image-container {
-        width: 100%; 
-        height: auto; 
+        width: 100%;
+        height: auto;
     }
 
     .hero-image-container img {
@@ -612,7 +616,7 @@ body, h1, ul, li, a {
         margin-bottom: 40px;
         margin-top: 40px;
     }
-    
+
     .hero-image {
         width: 336px;
         height: 100px;
@@ -626,29 +630,29 @@ body, h1, ul, li, a {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 25px; 
+        gap: 25px;
     }
-    
+
     .product-card {
-        width: 90%; 
-        margin: 0 auto 1rem; 
+        width: 90%;
+        margin: 0 auto 1rem;
         flex: 1 1 calc(50% - 25px);
     }
 
     .shop-all-btn {
-        margin-top: 0; 
+        margin-top: 0;
     }
-    
+
     .mailing-list-section {
-        height: 780px; 
+        height: 780px;
     }
 
     .mailing-list-image-container {
-       display: none;
+        display: none;
     }
 
     .mailing-list-image-container img {
-        border-radius: 0; 
+        border-radius: 0;
     }
 
     .mailing-list-content {
@@ -658,13 +662,13 @@ body, h1, ul, li, a {
 
     .mailing-list-input input,
     .subscribe-btn {
-        width: 60%; 
+        width: 60%;
     }
-    
+
     .mailing-list-input label {
         margin-left: -270px;
     }
-    
+
     .mailing-list-agreement label br {
         display: none;
     }
@@ -673,7 +677,7 @@ body, h1, ul, li, a {
     .about-us-rectangle {
         height: auto;
     }
-    
+
     .about-us-rectangle .text-container {
         display: flex;
         flex-direction: column;
@@ -681,63 +685,63 @@ body, h1, ul, li, a {
         align-items: center;
         height: 100vh;
     }
-    
-    
+
+
     .about-us-rectangle .description-container,
     .about-us-rectangle .shop-now-btn {
         width: 100%;
         max-width: 300px;
     }
-    
+
     .about-us-rectangle .title-container {
         margin-top: -250px;
     }
-    
+
     .about-us-rectangle .shop-now-btn {
         margin-top: 38rem;
         margin-left: -24rem;
         margin-top: 350px;
     }
 
-    
-    
+
+
     .product-benefits-section {
-        height: auto; 
+        height: auto;
     }
 
     .benefits-container {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
     }
 
     .benefit-item {
-        width: 90%; 
-        margin-bottom: 2rem; 
+        width: 90%;
+        margin-bottom: 2rem;
     }
 
-   
+
     .footer-section {
         height: auto;
     }
 
-    
+
     .footer-title {
         font-size: 30px;
         margin-bottom: 50px;
     }
-    
+
     .footer-item {
         display: none;
     }
-    
+
     .footer-line {
         display: none;
     }
-    
+
     .footer-column:nth-child(1) .footer-title:nth-of-type(2) {
         margin-top: 0;
     }
-    
+
     .footer-column:nth-child(2) .footer-title:nth-of-type(2) {
         margin-top: 0;
     }
@@ -757,10 +761,10 @@ body, h1, ul, li, a {
     .menubar {
         width: 1368px;
     }
-    
+
     .background-rectangle {
         width: 1410px;
-        
+
     }
 
     .best-sellers-rectangle {
@@ -770,29 +774,16 @@ body, h1, ul, li, a {
     .mailing-list-section {
         width: 1410px;
     }
-    
+
     .about-us-rectangle {
         width: 1410px;
     }
-    
+
     .product-benefits-section {
         width: 1410px;
     }
-    
+
     .footer-section {
         width: 1410px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

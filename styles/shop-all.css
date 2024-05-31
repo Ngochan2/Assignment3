@@ -3,13 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
-    --colour-darkgreen: #30382D; 
+    --colour-darkgreen: #30382D;
     --colour-darkcream: #E8DCC6;
-    --colour-lightyellow: #FDFAF0; 
+    --colour-lightyellow: #FDFAF0;
 }
 
 /* Reset the default styling */
-body, h1, ul, li, a {
+body,
+h1,
+ul,
+li,
+a {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -116,7 +120,7 @@ body {
     position: relative;
 }
 
-.product-card img{
+.product-card img {
     width: 345px;
     height: 488px;
     border-radius: 30px;
@@ -230,43 +234,43 @@ body {
 
 /* Adjusting screen to iphone 12 pro */
 @media screen and (max-width: 390px) {
-    
-    .shop-all-title{
+
+    .shop-all-title {
         font-size: 120px;
     }
-    
+
     .shop-all-description {
         font-size: 40px;
         margin-bottom: 50px;
     }
-    
+
     .product-cards-container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .product-card {
         width: 100%;
         margin: 20px 0;
     }
-    
+
     .product-card img {
         width: 100%;
         height: auto;
         margin-bottom: 50px;
     }
-    
+
     .product-card .product-name {
         font-size: 100px;
         margin-bottom: 50px;
     }
-    
+
     .product-card .product-description {
         font-size: 60px;
         margin-bottom: 50px;
     }
-    
+
     .product-card .product-price {
         font-size: 100px;
         margin-bottom: 150px;

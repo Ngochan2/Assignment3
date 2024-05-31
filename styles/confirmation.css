@@ -3,13 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
-    --colour-darkgreen: #30382D; 
+    --colour-darkgreen: #30382D;
     --colour-darkcream: #E8DCC6;
-    --colour-lightyellow: #FDFAF0; 
+    --colour-lightyellow: #FDFAF0;
 }
 
 /* Reset the default styling */
-body, h1, ul, li, a {
+body,
+h1,
+ul,
+li,
+a {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -198,24 +202,24 @@ body {
     .confirmation-container {
         height: 2300px;
     }
-    
+
     .confirmation-title {
         font-size: 80px;
         margin-bottom: 50px;
     }
-    
+
     .order-number {
         font-size: 50px;
         margin-bottom: 100px;
     }
-    
+
     .order-button {
         width: 900px;
         height: 130px;
         font-size: 50px;
         margin-bottom: 50px;
     }
-    
+
     .continue-shopping a {
         font-size: 50px;
     }
@@ -260,11 +264,11 @@ body {
     .menubar {
         width: 1368px;
     }
-    
+
     .confirmation-container {
         width: 1368px
     }
-    
+
     .footer-section {
         width: 1410px;
     }
