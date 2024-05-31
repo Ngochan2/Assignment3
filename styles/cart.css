@@ -3,13 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
-    --colour-darkgreen: #30382D; 
+    --colour-darkgreen: #30382D;
     --colour-darkcream: #E8DCC6;
-    --colour-lightyellow: #FDFAF0; 
+    --colour-lightyellow: #FDFAF0;
 }
 
 /* Reset the default styling */
-body, h1, ul, li, a {
+body,
+h1,
+ul,
+li,
+a {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -188,11 +192,11 @@ body {
     .empty-cart-container {
         height: 2300px;
     }
-    
+
     .empty-cart-text {
         font-size: 80px;
     }
-    
+
     .checkout-button {
         margin-top: 150px;
         width: 600px;
@@ -216,11 +220,11 @@ body {
     .menubar {
         width: 1368px;
     }
-    
+
     .empty-cart-container {
         width: 1368px;
     }
-    
+
     .footer-section {
         width: 1410px;
     }
