@@ -1,0 +1,174 @@
+@import url(/styles/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url(/styles/menu-bar.css);
+@import url(/styles/footer.css);
+
+:root {
+    --colour-darkgreen: #30382D;
+    --colour-darkcream: #E8DCC6;
+    --colour-lightyellow: #FDFAF0;
+}
+
+
+/* Setting background of the body */
+body {
+    background-color: var(--colour-lightyellow);
+}
+
+/* Cart is empty container styling */
+.empty-cart-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 122px);
+    text-align: center;
+}
+
+
+/* Order summary styling */
+.order-summary-container {
+    position: absolute;
+    top: 250px;
+    width: 800px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.order-summary-container h2 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--colour-darkgreen);
+    margin-top: 0;
+}
+
+.order-summary-item {
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 100px;
+    margin-top: 24px;
+}
+
+.order-summary-item:first-child {
+    margin-top: 0;
+}
+
+.order-summary-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.order-summary-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 50px;
+}
+
+.order-summary-name,
+.order-summary-price {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--colour-darkgreen);
+}
+
+.order-summary-price {
+    margin-left: 538px;
+}
+
+
+/* Horizontal divider styling */
+.horizontal-divider {
+    margin-top: 100px;
+    width: 800px;
+    height: 2px;
+    background-color: #96998E;
+}
+
+
+/* Total container styling */
+.total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    margin-top: 20px;
+    color: var(--colour-darkgreen);
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 25px;
+}
+
+
+/* Checkout button styling */
+.checkout-button {
+    margin-top: 150px;
+    width: 405px;
+    height: 72px;
+    border: 4px solid var(--colour-darkgreen);
+    background-color: var(--colour-lightyellow);
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--colour-darkgreen);
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    box-shadow: -9px 16px var(--colour-darkgreen);
+}
+
+.checkout-button:hover {
+    background-color: var(--colour-darkcream)
+}
+
+
+
+
+/* Adjusting screen to iPhone 12 pro */
+@media (max-width: 390px) {
+    .empty-cart-container {
+        height: 2300px;
+    }
+
+    .empty-cart-text {
+        font-size: 80px;
+    }
+
+    .checkout-button {
+        margin-top: 150px;
+        width: 600px;
+        height: 110px;
+        font-size: 36px;
+        box-shadow: -19px 24px var(--colour-darkgreen);
+        font-weight: 700;
+        letter-spacing: 0.3em;
+    }
+}
+
+
+
+/* Adjusting screen to surface pro 7 */
+@media (max-width: 1368px) {
+    .menubar {
+        width: 1368px;
+    }
+
+    .empty-cart-container {
+        width: 1368px;
+    }
+
+    .footer-section {
+        width: 1410px;
+    }
+}
