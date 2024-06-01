@@ -1,6 +1,7 @@
 @import url(styles/reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url(/styles/menu-bar.css);
 
 :root {
     --colour-darkgreen: #30382D;
@@ -8,7 +9,9 @@
     --colour-lightyellow: #FDFAF0;
 }
 
+
 /* Reset the default styling */
+/*
 body,
 h1,
 ul,
@@ -26,21 +29,24 @@ body {
 }
 
 /* Styling the menubar */
+/*
 .menubar {
     background-color: var(--colour-darkgreen);
     display: flex;
     justify-content: space-between;
-    padding: 0.625rem 1.25rem;
+    padding: 10px 20px;
     font-family: 'Poppins';
     height: 7.625rem;
 }
 
 /* Title Far North Soap styling */
+/*
 .menubar h1 {
     margin: 2.564rem 0 1.75rem 3.75rem;
 }
 
 /* Far North Soap title styling */
+/*
 .menubar h1 a {
     color: #FDFAF0;
     font-family: 'Poppins';
@@ -49,6 +55,7 @@ body {
 }
 
 /* Menu styling */
+/*
 .menu {
     display: flex;
     align-items: center;
@@ -57,6 +64,7 @@ body {
 }
 
 /* Menu items styling with spacing specified */
+/*
 .menu li {
     margin-right: 3.813rem;
 }
@@ -70,6 +78,7 @@ body {
 }
 
 /* Menu item styling */
+/*
 .menubar .menu li a {
     color: var(--colour-lightyellow);
     font-size: 1.063rem;
@@ -80,8 +89,15 @@ body {
 }
 
 /* Hovering effect for menu items */
+/*
 .menu li a:hover {
     color: var(--colour-darkcream);
+}*/
+
+
+/* Setting background of the body */
+body {
+    background-color: var(--colour-lightyellow);
 }
 
 /* Cart is empty styling */
