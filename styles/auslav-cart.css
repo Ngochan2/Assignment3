@@ -73,16 +73,25 @@ body {
     font-weight: 500;
     font-size: 20px;
     color: var(--colour-darkgreen);
+    white-space: nowrap;
 }
 
 .order-summary-price {
     margin-left: 538px;
 }
 
+.order-summary-item:nth-child(2) {
+    margin-top: 40px;
+}
+
+.order-summary-item:nth-child(2) .order-summary-price{
+    margin-left: 426px;
+}
+
 
 /* Horizontal divider styling */
 .horizontal-divider {
-    margin-top: 100px;
+    margin-top: 350px;
     width: 800px;
     height: 2px;
     background-color: #96998E;
@@ -163,9 +172,17 @@ body {
     .order-summary-price {
         margin-left: 400px;
     }
+    
+    .order-summary-item:nth-child(2) {
+        margin-top: 350px;
+    }
+    
+    .order-summary-item:nth-child(2) .order-summary-price{
+        margin-left: 150px;
+    }
 
     .horizontal-divider {
-        margin-top: 100px;
+        margin-top: 300px !important;
         width: 1200px;
         height: 5px;
         background-color: #96998E;
@@ -202,7 +219,7 @@ body {
     }
 
     .horizontal-divider {
-        margin-top: -400px;
+        margin-top: -150px;
     }
 
     .footer-section {

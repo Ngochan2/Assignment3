@@ -142,7 +142,7 @@ a {
         font-size: 90px;
         text-align: right;
         width: 500px;
-        margin: 2.564rem 0 1.75rem -17rem;
+        margin: 2.564rem 0 1.75rem -5rem;
     }
 
     .menubar .menu {
@@ -164,6 +164,8 @@ a {
     
     .checkbtn {
         display: block;
+        z-index: 10;
+        position: absolute;
     }
 
     .hamburger-bar img {
