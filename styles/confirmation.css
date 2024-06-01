@@ -1,6 +1,8 @@
 @import url(styles/reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url(/styles/menu-bar.css);
+@import url(/styles/footer.css);
 
 :root {
     --colour-darkgreen: #30382D;
@@ -8,80 +10,8 @@
     --colour-lightyellow: #FDFAF0;
 }
 
-/* Reset the default styling */
-body,
-h1,
-ul,
-li,
-a {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-}
-
 body {
     background-color: var(--colour-lightyellow);
-}
-
-/* Styling the menubar */
-.menubar {
-    background-color: var(--colour-darkgreen);
-    display: flex;
-    justify-content: space-between;
-    padding: 0.625rem 1.25rem;
-    font-family: 'Poppins';
-    height: 7.625rem;
-}
-
-/* Title Far North Soap styling */
-.menubar h1 {
-    margin: 2.564rem 0 1.75rem 3.75rem;
-}
-
-/* Far North Soap title styling */
-.menubar h1 a {
-    color: #FDFAF0;
-    font-family: 'Poppins';
-    font-weight: 600;
-    font-size: 2.188rem;
-}
-
-/* Menu styling */
-.menu {
-    display: flex;
-    align-items: center;
-    margin-top: 3.813rem;
-    margin-bottom: 2.188rem;
-}
-
-/* Menu items styling with spacing specified */
-.menu li {
-    margin-right: 3.813rem;
-}
-
-.menu li:last-child {
-    margin-right: 4.563rem;
-}
-
-.menu li:nth-last-child(2) {
-    margin-right: 14.313rem;
-}
-
-/* Menu item styling */
-.menubar .menu li a {
-    color: var(--colour-lightyellow);
-    font-size: 1.063rem;
-    font-family: 'Poppins';
-    font-weight: 400;
-    text-transform: uppercase;
-    transition: color 0.3s ease;
-}
-
-/* Hovering effect for menu items */
-.menu li a:hover {
-    color: var(--colour-darkcream);
 }
 
 
@@ -130,70 +60,6 @@ body {
     color: var(--colour-darkgreen);
     font-weight: 400;
     text-decoration: underline;
-}
-
-
-
-/* Footer styling */
-.footer-section {
-    width: 100%;
-    height: 650px;
-    background-color: var(--colour-darkgreen);
-    border-radius: 20px 20px 0px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 76px;
-    position: relative;
-    margin-top: -20px;
-    box-sizing: border-box;
-}
-
-.footer-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 147px;
-    width: calc(100% - 256px);
-    box-sizing: border-box;
-}
-
-.footer-column {
-    text-align: left;
-}
-
-.footer-title {
-    font-family: 'Poppins';
-    font-weight: 500;
-    font-size: 20px;
-    color: var(--colour-lightyellow);
-    margin-bottom: 9px;
-}
-
-.footer-line {
-    width: 300px;
-    height: 2px;
-    background-color: var(--colour-lightyellow);
-    margin-bottom: 7px;
-}
-
-.footer-item {
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 19px;
-    color: var(--colour-lightyellow);
-    margin-bottom: 20px;
-}
-
-.footer-column:nth-child(1) .footer-title:nth-of-type(2) {
-    margin-top: 50px;
-}
-
-.footer-column:nth-child(2) .footer-title:nth-of-type(2) {
-    margin-top: 50px;
-}
-
-.footer-sustainability {
-    margin-top: 98px;
 }
 
 

@@ -1,11 +1,16 @@
 @import url(styles/reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url(/styles/footer.css);
 
 :root {
     --colour-darkgreen: #30382D;
     --colour-darkcream: #E8DCC6;
     --colour-lightyellow: #FDFAF0;
+}
+
+body {
+    background-color: var(--colour-lightyellow);
 }
 
 /* Reset the default styling */
@@ -21,9 +26,7 @@ a {
     box-sizing: border-box;
 }
 
-body {
-    background-color: var(--colour-lightyellow);
-}
+
 
 /* Menubar for the checkout page */
 .checkout-menubar {
@@ -295,6 +298,20 @@ body {
 
 /* Adjusting screen to iPhone 12 pro */
 @media (max-width: 390px) {
+    
+    .checkout-menubar {
+        height: 200px;
+    }
+    
+    .menubar-title {
+        font-size: 70px;
+    }
+    
+    .checkout-menubar img {
+        width: 100px;
+        height: 100px;
+        margin-right: 90px;
+    }
 
     .order-summary-container {
         position: relative;
@@ -405,6 +422,11 @@ body {
         font-size: 30px;
     }
 
+    .total-section {
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    
     .total-label {
         font-size: 60px;
     }
@@ -412,14 +434,24 @@ body {
     .total-price {
         font-size: 60px;
     }
-
+    
+    .payment-icons img {
+        width: 55px;
+        height: 37px;
+        margin-right: 20px;
+    }
+    
+    .paypal-icon {
+        height: 40px;
+        margin-right: 20px;
+    }
 }
 
 
 
 
 
-
+/* Adjusting screen to surface pro 7 */
 @media (max-width: 1368px) {
 
     .checkout-menubar {
