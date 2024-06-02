@@ -500,7 +500,13 @@
     }
 
     .best-sellers-rectangle {
-        height: 1800px;
+        height: 2300px;
+        border: 2px solid orange;
+    }
+    
+    .best-sellers-title {
+        font-size: 80px;
+        margin-bottom: 130px;
     }
 
     .product-container {
@@ -511,15 +517,44 @@
     }
 
     .product-card {
-        width: 90%;
+        width: 100%;
         margin: 0 auto 1rem;
         flex: 1 1 calc(50% - 25px);
     }
-
-    .shop-all-btn {
-        margin-top: 0;
+    
+    
+    .product-card {
+        border: 2px solid brown;
+        margin-bottom: 100px;
     }
 
+    .product-image {
+        width: 444px;
+        height: 585.6px;
+        border-radius: 30px;
+        display: block;
+        margin: 0 auto;
+        object-fit: cover;
+    }
+    
+    .product-name {
+        font-size: 40px;
+    }
+    
+    .product-price {
+        font-size: 40px;
+    }
+
+    .shop-all-btn {
+        margin-top: 30px;
+        height: 150px;
+        width: 600px;
+        font-size: 45px;
+        border: 6px solid var(--colour-darkgreen);
+        box-shadow: -20px 30px var(--colour-darkgreen);
+        border-radius: 15px;
+    }
+    
     .mailing-list-section {
         height: 780px;
     }
