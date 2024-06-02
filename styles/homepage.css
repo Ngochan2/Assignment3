@@ -429,7 +429,7 @@
 
     .background-rectangle {
         flex-direction: column;
-        height: 1240px;
+        height: 2640px;
     }
 
     .text-container {
@@ -440,6 +440,25 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        border: 2px solid black;
+    }
+    
+    .background-rectangle .text-container {
+        height: 1200px;
+    }
+    
+    .background-rectangle .title-container {
+        border: 2px solid blue;
+        width: 1050px;
+        height: 300px;
+        font-size: 100px;
+    }
+    
+    .background-rectangle .description-container {
+        border: 2px solid red;
+        width: 1050px;
+        height: 600px;
+        font-size: 70px;
     }
 
     .shop-now-btn {
@@ -449,16 +468,30 @@
         position: absolute;
         left: 580px;
     }
-
-    .hero-image-container {
-        width: 100%;
-        height: auto;
+    
+    .background-rectangle .shop-now-btn {
+        width: 600px;
+        height: 150px;
+        margin-left: -170px;
+        font-size: 45px;
+        border: 6px solid var(--colour-darkgreen);
+        box-shadow: -20px 30px var(--colour-darkgreen);
+        border-radius: 15px;
     }
 
-    .hero-image-container img {
+    .background-rectangle .hero-image-container {
+        width: 100%;
+        height: 1500px;
+        border: 2px solid purple;
+        top: 40px;
+    }
+
+    .background-rectangle .hero-image-container img {
         border-radius: 30px;
         margin-bottom: 40px;
         margin-top: 40px;
+        width: 1050px;
+        height: 1300px;
     }
 
     .hero-image {
