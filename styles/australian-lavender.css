@@ -331,10 +331,11 @@ body {
     }
 
     .product-image {
-        width: 80%;
-        height: auto;
-        margin: 30px;
-        border-radius: 30px;
+        width: 90%;
+        height: 1600px;
+        margin: 50px;
+        border-radius: 80px;
+        object-fit: cover;
     }
 
     .product-details {
@@ -343,71 +344,97 @@ body {
     }
 
     .product-title {
-        font-size: 67px;
+        font-size: 80px;
     }
 
     .product-description {
-        font-size: 35px;
-        margin-left: 100px;
-        margin-right: 100px;
+        font-size: 50px;
+        width: 100%;
+    }
+    
+    .product-container .product-details {
+        display: flex;
+        margin: 20px;
+        text-align: center;
+        width: 90%;
+    }
+    
+    .product-container .product-description {
+        font-size: 60px;
+        width: 100%;
+    }
+    
+    .product-container .product-price {
+        font-size: 70px;
     }
 
     .product-price {
-        font-size: 53px;
+        font-size: 100px;
     }
 
     .product-quantity {
         flex-direction: row;
         gap: 90px;
+        justify-content: space-between
     }
 
     .quantity-box {
         font-size: 33px;
-        width: 204px;
-        height: 68px;
-        margin-right: 40px;
-    }
-
-    .add-to-cart-btn {
-        margin: 20px 0px;
-        width: 417px;
+        width: 350px;
         height: 100px;
+        margin-left: 0;
+        border: 5px solid var(--colour-darkgreen);
+        border-radius: 15px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        font-size: 60px;
+        padding: 0;
+    }
+    
+    .add-to-cart-btn {
+        margin: 30px 0px;
+        width: 700px;
+        height: 150px;
         margin-left: 80px;
         font-size: 27px;
-        letter-spacing: 3.64px;
+        letter-spacing: 1rem;
+        font-size: 45px;
+        border: 6px solid var(--colour-darkgreen);
+        box-shadow: -20px 30px var(--colour-darkgreen);
+        border-radius: 15px;
     }
 
     .wishlist {
         justify-content: center;
+        margin-top: 120px;
+        margin-bottom: 80px;
     }
 
     .wishlist-icon {
-        width: 32px;
-        height: 32px;
+        width: 70px;
+        height: 70px;
     }
 
     .wishlist-text {
-        font-size: 37px;
+        font-size: 50px;
     }
-
 
     .additional-info {
         align-items: center;
     }
 
     .info-title {
-        font-size: 31px;
-        margin-left: 70px;
+        font-size: 45px;
     }
 
     .info-icon {
-        width: 31px;
-        height: 31px;
-        margin-right: 70px;
+        width: 45px;
+        height: 45px;
+        margin-right: 0;
     }
 
     .divider {
-        width: 90%;
+        width: 100%;
         margin: 40px auto;
     }
 
@@ -420,6 +447,8 @@ body {
         font-size: 80px;
         text-align: center;
         margin-left: 0;
+        margin-top: 100px;
+        margin-bottom: 80px;
     }
 
     .faq-divider {
@@ -428,12 +457,12 @@ body {
     }
 
     .faq-question {
-        font-size: 33px;
+        font-size: 50px;
     }
 
     .faq-icon {
-        width: 31px;
-        height: 31px;
+        width: 45px;
+        height: 45px;
     }
 
     .product-cards-container {
@@ -447,10 +476,9 @@ body {
     }
 
     .recommendation-title {
-        width: 500px;
+        width: 1235px;
         text-align: center;
-        margin-left: 500px;
-        font-size: 67px;
+        font-size: 80px;
     }
 
     .recommendation-section .product-card img {
@@ -460,19 +488,20 @@ body {
     }
 
     .recommendation-section .product-name {
-        font-size: 60px;
+        font-size: 70px;
         width: 800px;
         margin-left: -270px;
     }
 
     .recommendation-section .product-description {
-        font-size: 40px;
+        font-size: 50px;
         width: 600px;
         margin-left: -160px;
     }
 
     .recommendation-section .product-price {
-        font-size: 53px;
+        margin-top: 30px;
+        font-size: 70px;
     }
 
     .additional-images-section {
@@ -483,7 +512,6 @@ body {
     .image-container img {
         width: 1200px;
     }
-
 
     .overlay-text {
         font-size: 80px;
