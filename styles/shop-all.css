@@ -9,6 +9,8 @@
 
 body {
     background-color: var(--colour-lightyellow);
+    display: flex;
+    flex-direction: column; 
 }
 
 /* Shop All title and description styling */
@@ -104,8 +106,13 @@ body {
     }
 
     .shop-all-description {
-        font-size: 40px;
+        max-width: 1000px;
+        font-size: 60px;
         margin-bottom: 50px;
+        align-self: center;
+        justify-content: center;
+        display: flex;
+        margin-left: 1000px;
     }
 
     .product-cards-container {
