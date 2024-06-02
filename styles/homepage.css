@@ -522,7 +522,7 @@
     
     
     .product-card {
-        margin-bottom: 100px;
+        margin-bottom: 150px;
     }
 
     .product-image {
@@ -535,11 +535,11 @@
     }
     
     .product-name {
-        font-size: 40px;
+        font-size: 50px;
     }
     
     .product-price {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .shop-all-btn {
