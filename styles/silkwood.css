@@ -63,6 +63,14 @@ body {
     gap: 50px;
 }
 
+button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+
 .quantity-box {
     font-family: 'Poppins';
     font-size: 25px;
@@ -82,6 +90,8 @@ body {
 .quantity-decrease,
 .quantity-increase {
     cursor: pointer;
+    font-weight: 400;
+    font-size: 25px;
 }
 
 .quantity-number {
@@ -386,6 +396,12 @@ body {
         flex-grow: 0;
         font-size: 60px;
         padding: 0;
+    }
+    
+    .quantity-decrease,
+    .quantity-increase,
+    .quantity-number {
+    font-size: 55px;
     }
     
     .add-to-cart-btn {
