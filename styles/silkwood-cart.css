@@ -141,15 +141,25 @@ body {
     margin-top: -30px;
 }
 
+button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+
 .quantity-decrease,
 .quantity-increase {
     cursor: pointer;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 .quantity-number {
     font-family: 'Poppins';
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 /* Cancel button styling */
@@ -242,6 +252,12 @@ body {
     margin-left: 350px;
     margin-top: 0;
     }
+    
+    .quantity-decrease,
+    .quantity-increase,
+    .quantity-number {
+    font-size: 55px;
+    }    
 
     /* Cancel button styling */
     .cancel-button {
