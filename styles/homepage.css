@@ -520,7 +520,6 @@
         flex: 1 1 calc(50% - 25px);
     }
     
-    
     .product-card {
         margin-bottom: 150px;
     }
@@ -551,11 +550,6 @@
         box-shadow: -20px 30px var(--colour-darkgreen);
         border-radius: 15px;
     }
-    
-    
-    
-    
-    
     
     .mailing-list-section {
         height: 1460px;
@@ -608,9 +602,6 @@
         margin-left: -720px;
     }
     
-    
-    
-    
     .mailing-list-agreement {
         width: 1100px;
         margin-left: -140px;
@@ -638,13 +629,6 @@
         font-size: 45px;
         box-shadow: -20px 30px var(--colour-darkgreen);
     }
-
-    
-    
-    
-    
-    
-    
 
     .about-us-rectangle {
         height: auto;
@@ -686,10 +670,6 @@
         box-shadow: -20px 30px var(--colour-darkgreen);
     }
 
-
-    
-    
-    
     .product-benefits-section {
         height: 3100px;
     }
