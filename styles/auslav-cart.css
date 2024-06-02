@@ -43,9 +43,9 @@ body {
 .order-summary-item {
     display: flex;
     align-items: center;
-    width: 450px;
+    width: 795px;
     height: 100px;
-    margin-top: 24px;
+    margin-top: 70px;
 }
 
 .order-summary-item:first-child {
@@ -61,6 +61,7 @@ body {
 
 .order-summary-details {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -76,18 +77,10 @@ body {
     white-space: nowrap;
 }
 
-.order-summary-price {
-    margin-left: 538px;
-}
 
 .order-summary-item:nth-child(2) {
     margin-top: 40px;
 }
-
-.order-summary-item:nth-child(2) .order-summary-price{
-    margin-left: 426px;
-}
-
 
 /* Horizontal divider styling */
 .horizontal-divider {
@@ -114,7 +107,7 @@ body {
 
 /* Checkout button styling */
 .checkout-button {
-    margin-top: 150px;
+    margin-top: 100px;
     width: 405px;
     height: 72px;
     border: 4px solid var(--colour-darkgreen);
@@ -134,6 +127,52 @@ body {
     background-color: var(--colour-darkcream)
 }
 
+/* Quantity Box styling */
+.quantity-box {
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--colour-darkgreen);
+    width: 80px;
+    height: 25px;
+    background-color: var(--colour-lightyellow);
+    border-radius: 10px;
+    border: 1.5px solid var(--colour-darkgreen);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px;
+    margin-left: 140px;
+    margin-top: -30px;
+}
+
+.quantity-decrease,
+.quantity-increase {
+    cursor: pointer;
+}
+
+.quantity-number {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 25px;
+}
+
+/* Cancel button styling */
+.cancel-button {
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: var(--colour-darkgreen);
+    text-decoration: underline;
+    margin-left: 742px;
+    margin-top: -15px;
+}
+
+/* Footer styling */
+.footer-section {
+    margin-top: 100px;
+}
+
+
 
 
 
@@ -144,7 +183,8 @@ body {
     }
 
     .order-summary-container {
-        top: 600px;
+        position: relative;
+        top: -300px;
         width: 1100px;
         height: 350px;
     }
@@ -152,6 +192,7 @@ body {
     .order-summary-item {
         width: 1090px;
         height: 100px;
+        margin-bottom: 400px;
     }
 
     .order-summary-image {
@@ -169,15 +210,11 @@ body {
         font-size: 50px;
     }
 
-    .order-summary-price {
-        margin-left: 400px;
-    }
-    
     .order-summary-item:nth-child(2) {
         margin-top: 350px;
     }
-    
-    .order-summary-item:nth-child(2) .order-summary-price{
+
+    .order-summary-item:nth-child(2) .order-summary-price {
         margin-left: 150px;
     }
 
@@ -188,7 +225,6 @@ body {
         background-color: #96998E;
     }
 
-
     .total-container {
         width: 1100px;
         margin-top: 80px;
@@ -197,12 +233,44 @@ body {
 
     .checkout-button {
         margin-top: 150px;
-        width: 600px;
-        height: 110px;
-        font-size: 36px;
-        box-shadow: -19px 24px var(--colour-darkgreen);
+        font-size: 40px;
         font-weight: 700;
         letter-spacing: 0.3em;
+        border: 6px solid var(--colour-darkgreen);
+        box-shadow: -20px 30px var(--colour-darkgreen);
+        border-radius: 15px;
+        width: 650px;
+        height: 150px;
+    }
+
+    /* Quantity Box styling */
+    .quantity-box {
+        position: absolute;
+        bottom: 140px;
+        right: 400px;
+        font-size: 50px;
+        width: 300px;
+        height: 100px;
+        border-radius: 15px;
+        border: 4px solid var(--colour-darkgreen);
+    }
+
+    /* Cancel button styling */
+    .cancel-button {
+        position: absolute;
+        font-size: 35px;
+        bottom: 150px;
+        right: 0;
+    }
+    
+    .order-summary-container .quantity-box:nth-of-type(2) {
+        bottom: -430px;
+        right: 400px;
+    }
+
+    .order-summary-container .cancel-button:nth-of-type(2) {
+        bottom: -550px;
+        right: 45px;
     }
 }
 
