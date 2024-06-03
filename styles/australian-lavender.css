@@ -1,5 +1,5 @@
-@import url(/styles/menu-bar.css);
-@import url(/styles/footer.css);
+@import url('menu-bar.css');
+@import url('footer.css');
 
 :root {
     --colour-darkgreen: #30382D;
